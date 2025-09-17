@@ -2,5 +2,228 @@
 layout: page
 ---
 
-{% include archive.html %}
+<div class="homepage-content">
+  <!-- 个人简介部分 -->
+  <section class="profile-section">
+    <h2>Personal Introduction</h2>
+    <p>Welcome to my personal website! I am a student/researcher focusing on academic research, dedicated to making contributions in related fields.</p>
+  </section>
+
+  <!-- 教育经历部分 -->
+  <section class="education-section">
+    <h2>🎓 Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2018 - 2022</div>
+        <div class="timeline-content">
+          <h3>Bachelor - Automation</h3>
+          <p><strong>Jiangsu University of Science and Technology</strong></p>
+          <p>GPA: 84/100 | Related courses: Linear Algebra, Computer Programming Language, Advanced Mathematics</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2022 - 2025</div>
+        <div class="timeline-content">
+          <h3>Master - Control Science and Engineering</h3>
+          <p><strong>Guangdong University of Technology</strong></p>
+          <p>Research direction: Deep Learning, Model compression, efficient neural network design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 研究兴趣部分 -->
+  <section class="research-section">
+    <h2>🔬 Research Interests</h2>
+    <div class="research-areas">
+      <div class="research-area">
+        <h3>Machine Learning</h3>
+        <p>Deep Learning, Efficient Neural Network, Cross-scale Model</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 实习经历部分 -->
+  <section class="experience-section">
+    <h2>🔬 Research Experience</h2>
+    <div class="experience-list">
+      <div class="experience-item">
+        <h3></h3>Designing efficient deep learning model architectures | Sep 2024 – Jun 2025  </h3>
+        <h3>Research Assistant</h3>
+        <p><strong> Advisor: Prof. Weiliang Zeng</strong></p>
+      </div>
+      <div class="experience-item">
+        <h3></h3>Adaptive Lightweight Self-Knowledge Distillation Network Construction Method | Sep 2022 – Jun 2023 </h3>
+        <h3>Research Assistant</h3>
+        <p><strong> Advisor: Prof. Weiliang Zeng; Prof. Xueshi Li </strong></p>
+      </div>
+      <div class="experience-item">
+        <h3></h3>Research on SLAM method based on RGB-D camera in indoor environment | Sep 2021 – Dec 2022 </h3>
+        <h3>Research Assistant</h3>
+        <p><strong>Advisor: Prof. Xuedong Wu</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 实习经历部分 -->
+  <section class="experience-section">
+    <h2>💼 Internship</h2>
+    <div class="experience-list">
+      <div class="experience-item">
+        <p><strong>Guangdong Institute of Intelligent Science and Technology</strong> | Dec 2023 – Jul 2024 </p>
+        <h3>Research Internship</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- 发表论文部分 -->
+  <section class="publications-section">
+    <h2>📚 Publications</h2>
+    <div class="publications-list">
+      <div class="publication-item">
+        <h3>Deep Learning Approaches for Natural Language Processing</h3>
+        <p><strong>Author:</strong>Siyuan Lu, Weiliang Zeng, Xueshi Li, Jiajun Ou</p>
+        <p><strong>Journal:</strong>Neurocomputing, 2025</p>
+        <p><strong>Link:</strong><a href="#" target="_blank">DOI: 10.1016/j.neucom.2025.129477</a></p>
+      </div>
+      <div class="publication-item">
+        <h3>SE-DARTS: Lightweight Neural Architecture Search Based on Spatial Compression</h3>
+        <p><strong>Author:</strong>Siyuan Lu, Jiajun Ou, Weiliang Zeng</p>
+        <p><strong>Journal:</strong>Machine Learning, Under Review</p>
+        <p><strong>Link:</strong><a href="#" target="_blank">DOI: 10.13140/RG.2.2.17829.97760</a></p>
+      </div>
+      <div class="publication-item">
+        <h3>YOLO-DeepSORT Empowered UAV-based Traffic Behavior Analysis: A Novel Trajectory Extraction Tool for Traffic Moving Objects at Intersections</h3>
+        <p><strong>Author:</strong>Jiajun Ou, Weiliang Zeng, Siyu Chen, Siyuan Lu</p>
+        <p><strong>Conference:</strong>IEEE CSIS-IAC, 2025</p>
+        <p><strong>Link:</strong><a href="#" target="_blank">https://www.researchgate.net/publication/391566372_YOLO-DeepSORT_Empowered_UAV-based_Traffic_Behavior_Analysis_A_Novel_Trajectory_Extraction_Tool_for_Traffic_Moving_Objects_at_Intersections</a></p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+.homepage-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-section, .education-section, .experience-section, 
+.research-section, .publications-section, .blog-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.homepage-content h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #3498db;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3498db;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.timeline-content h3 {
+  color: #2c3e50;
+  margin: 5px 0;
+}
+
+.experience-item, .publication-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.experience-item h3, .publication-item h3 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+}
+
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.research-area {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.research-area h3 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+}
+
+
+.publication-item ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.publication-item li {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .homepage-content {
+    padding: 10px;
+  }
+  
+  .timeline {
+    padding-left: 20px;
+  }
+  
+  .research-areas {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
